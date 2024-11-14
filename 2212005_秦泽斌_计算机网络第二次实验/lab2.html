@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算机网络第二次实验</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('src/background.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; /* 防止背景重复 */
+            min-height: 100vh; /* 确保背景至少覆盖视口高度 */
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* 居中显示 */
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block; /* 使列表块居中 */
+        }
+        li {
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景色，增强可读性 */
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 14px; 
+        }
+        img.logo {
+            max-width: 150px; /* 限制logo的最大宽度 */
+            height: auto; /* 保持logo的比例 */
+            margin-bottom: 20px; 
+            border-radius: 50%; /* 将logo设置为圆形 */
+            border: 2px solid #fff; 
+        }
+        /* 添加一个覆盖层以实现背景虚化 */
+        .background-blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(2px); 
+            z-index: 0; /* 确保在其他内容后面 */
+        }
+        .content {
+            position: relative; /* 让内容层在覆盖层上面 */
+            z-index: 1; /* 确保内容在虚化层上方 */
+        }
+        audio {
+            display: block;
+            margin: 20px auto 0 auto; /* 上下留空，水平居中 */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blur"></div> 
+    <div class="content"> 
+        <img src="src/logo.png" alt="Logo" class="logo"> 
+        <h1>个人信息</h1>
+        <ul>
+            <li><strong>专业：</strong>物联网工程</li>
+            <li><strong>姓名：</strong>秦泽斌</li>
+            <li><strong>学号：</strong>2212005</li>
+            <li><strong>Github：</strong><a href="https://github.com/lalaZZB" target="_blank">lalaZZB</a></li>
+            <li><strong>Email：</strong>zzb0472@gmail.com</li>
+        </ul>
+        <audio controls>
+            <source src="src/EldenRing.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
